@@ -26,10 +26,6 @@ public class Anagram {
     @Parameter(names={"--string2", "-s2"})
     String string2;
 	
-//	public static void main(String[] args) {
-//		System.out.println(isAnagram("Punishment", "Nine Thtyps"));
-//	}   
-
     public static void main(String ... argv) {
     	Anagram main = new Anagram();
         JCommander.newBuilder()
@@ -39,10 +35,20 @@ public class Anagram {
         main.run();
     }
 
-    public void run() {
-     //   System.out.printf("%d %d", length, pattern);
+    public void run() {              
+        boolean result = isAnagram(string1, string2);
         
-        System.out.println(isAnagram(string1, string2));
+        if (result) {
+        	System.out.println("Result: "+result);
+        	System.out.println("String1: "+string1);
+        	System.out.println("String2: "+string2);
+        	System.out.println("String1 is an anagram of String2");
+        } else {
+        	System.out.println("Result: "+result);
+        	System.out.println("String1: "+string1);
+        	System.out.println("String2: "+string2);
+        	System.out.println("String1 is not anagram of String2");        	
+        }        
     }
 	
 	/**
