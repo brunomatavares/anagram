@@ -2,12 +2,19 @@
 
 Tested with jdk1.8.0_11
 
-Example:
-mvn install
+# Documentation
+* mvn javadoc:javadoc
+* anagram/target/site/apidocs/index.html
 
-cd target
+# Tests
+* mvn test
 
-java -jar .\anagram-0.0.1-SNAPSHOT-jar-with-dependencies.jar -s1 "Punishment" -s2 "Nine Thumps"
+# Install
+* mvn install
+
+# Run
+* cd target
+* java -jar anagram-0.0.1-SNAPSHOT-jar-with-dependencies.jar -s1 "Punishment" -s2 "Nine Thumps"
 
 
 

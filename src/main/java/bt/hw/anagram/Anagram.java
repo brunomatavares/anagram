@@ -15,7 +15,6 @@ import com.beust.jcommander.Parameter;
  * using the same exact letters.
 
  * @author      Bruno Tavares
- * @version     %I%, %G%
  * @since       1.0
  */
 
